@@ -1,0 +1,31 @@
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+*.log
+*.dSYM/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test binaries
+/test*
