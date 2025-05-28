@@ -20,12 +20,14 @@ cd build
 cmake ..
 make sha1024
 make sha1024_test
+make sha1024_entropy
 ```
 
 ### Run
 ```sh
 ./sha1024
 ./sha1024_test
+./sha1024_entropy
 ```
 
 ## License
