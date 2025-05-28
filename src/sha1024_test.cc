@@ -7,7 +7,7 @@ void test_consistency() {
     std::string h1 = sha1024("hello world");
     std::string h2 = sha1024("hello world");
     assert(h1 == h2 && "Same input should produce same hash");
-    std::cout << "[✓] Consistency test passed.\n";
+    std::cout << "Consistency test passed.\n";
 }
 
 void test_difference() {
