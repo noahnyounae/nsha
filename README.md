@@ -7,31 +7,25 @@ This project provides a modular implementation of the SHA-1024 cryptographic has
 - Follows the structure of the SHA-2 family
 - Easy to build and use as a library or CLI
 
-## File Structure
-- `sha1024.cpp` — Main hash function and CLI
-- `K1024.cpp/h` — Round constants
-- `initState1024.cpp/h` — Initial state values
-- `padMessage1024.cpp/h` — Message padding
-- `buildMessageSchedule1024.cpp/h` — Message schedule
-- `compression1024.cpp/h` — Compression function
+## Directory Structure
+- `src/` — All source and header files
+- `build/` — CMake build output
 
 ## Build
 
-### Simple build (single file, using g++)
+### Using CMake (Recommended)
 ```sh
-g++ -std=c++17 sha1024.cpp buildMessageSchedule1024.cpp compression1024.cpp initState1024.cpp padMessage1024.cpp K1024.cpp -o sha1024
+mkdir -p build
+cd build
+cmake ..
+make sha1024
+make sha1024_test
 ```
 
-### With Makefile
-A sample `Makefile` is provided. To build:
-```sh
-make
-```
-
-## Usage
-Run the CLI:
+### Run
 ```sh
 ./sha1024
+./sha1024_test
 ```
 
 ## License

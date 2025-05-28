@@ -1,7 +1,7 @@
 #ifndef BUILD_MESSAGE_SCHEDULE_1024_CPP
 #define BUILD_MESSAGE_SCHEDULE_1024_CPP
 
-#include "buildMessageSchedule1024.h"
+#include "buildMessageSchedule1024.hxx"
 
 // Right rotation for 64-bit values
 uint64_t ROTR(uint64_t x, int n) {

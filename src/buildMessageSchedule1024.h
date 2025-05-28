@@ -1,5 +1,5 @@
-#ifndef BUILD_MESSAGE_SCHEDULE_1024_H
-#define BUILD_MESSAGE_SCHEDULE_1024_H
+#ifndef BUILD_MESSAGE_SCHEDULE_1024_HXX
+#define BUILD_MESSAGE_SCHEDULE_1024_HXX
 
 #include <cstdint>
 #include <vector>
@@ -10,4 +10,4 @@ uint64_t sigma0(uint64_t x);
 uint64_t sigma1(uint64_t x);
 void buildMessageSchedule1024(const std::vector<uint8_t>& block, uint64_t W[128]);
 
-#endif // BUILD_MESSAGE_SCHEDULE_1024_H
+#endif // BUILD_MESSAGE_SCHEDULE_1024_HXX

@@ -1,7 +1,7 @@
-#ifndef INITSTATE1024_CPP
-#define INITSTATE1024_CPP
+#ifndef INITSTATE1024_CC
+#define INITSTATE1024_CC
 
-#include "initState1024.h"
+#include "initState1024.hxx"
 
 // Initial SHA-1024 state values (first 16 64-bit words)
 void initState1024(uint64_t H[16]) {
@@ -20,7 +20,7 @@ void initState1024(uint64_t H[16]) {
     }
 }
 
-#endif // INITSTATE1024_CPP
+#endif // INITSTATE1024_CC
 
 /*
 #ifndef MAIN

@@ -22,6 +22,8 @@ CMakeCache.txt
 cmake_install.cmake
 Makefile
 build/
+# Ignore CMake build directory
+/build/
 
 # OS
 .DS_Store

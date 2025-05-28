@@ -1,7 +1,7 @@
 #ifndef K1024_CPP
 #define K1024_CPP
 
-#include "K1024.h"
+#include "K1024.hxx"
 
 // SHA-1024 round constants (K[0..127])
 const uint64_t K[128] = {

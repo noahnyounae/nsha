@@ -1,8 +1,9 @@
-#ifndef COMPRESSION1024_CPP
-#define COMPRESSION1024_CPP
+#ifndef COMPRESSION1024_CC
+#define COMPRESSION1024_CC
 
-#include "compression1024.h"
-#include "K1024.h"
+#include "compression1024.hxx"
+#include "K1024.hxx"
+#include "buildMessageSchedule1024.hxx"
 
 // SHA-1024 Sigma0 function
 uint64_t Sigma0(uint64_t x) {
@@ -60,4 +61,4 @@ void compressBlock1024(uint64_t state[16], const uint64_t W[128]) {
     state[12] += m; state[13] += n; state[14] += o; state[15] += p;
 }
 
-#endif // COMPRESSION1024_CPP
+#endif // COMPRESSION1024_CC

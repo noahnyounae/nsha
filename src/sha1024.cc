@@ -1,6 +1,3 @@
-#ifndef SHA1024_H
-#define SHA1024_H
-
 #include <iostream>
 #include <iomanip>
 #include <sstream>
@@ -9,11 +6,11 @@
 #include <cstdint>
 #include <cstring>
 
-#include "K1024.h"
-#include "initState1024.h"
-#include "padMessage1024.h"
-#include "buildMessageSchedule1024.h"
-#include "compression1024.h"
+#include "K1024.hxx"
+#include "initState1024.hxx"
+#include "padMessage1024.hxx"
+#include "buildMessageSchedule1024.hxx"
+#include "compression1024.hxx"
 
 // Compute SHA-1024 hash for a given input string
 std::string sha1024(const std::string& input) {
@@ -40,22 +37,3 @@ std::string sha1024(const std::string& input) {
     }
     return oss.str();
 }
-
-#endif // SHA1024_H
-
-#ifndef MAIN
-#define MAIN
-
-// Simple CLI for SHA-1024
-int main() {
-    std::string input;
-    std::cout << "Enter a string to hash: ";
-    std::getline(std::cin, input);
-    std::string hash = sha1024(input);
-    std::cout << "\nSHA-1024:\n" << hash << std::endl;
-    hash = sha1024(input);
-    std::cout << "\nSHA-1024:\n" << hash << std::endl;
-    return 0;
-}
-
-#endif // MAIN

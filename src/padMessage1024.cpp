@@ -1,7 +1,7 @@
-#ifndef PADMESSAGE1024_CPP
-#define PADMESSAGE1024_CPP
+#ifndef PADMESSAGE1024_CC
+#define PADMESSAGE1024_CC
 
-#include "padMessage1024.h"
+#include "padMessage1024.hxx"
 
 using namespace std;
 
@@ -37,7 +37,7 @@ vector<uint8_t> safePadMessage1024(const string& input, uint64_t maxInputBytes =
     return padMessage1024(input);
 }
 
-#endif // PADMESSAGE1024_CPP
+#endif // PADMESSAGE1024_CC
 
 /*
 #ifndef MAIN
